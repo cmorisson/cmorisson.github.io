@@ -1,0 +1,112 @@
+<!-- after Head we would had:
+
+		<script>
+			document.documentElement.className = 'has-js';
+		</script>
+		had then include .has-js on main.js on h3 + * { ... }
+
+		for browsers that have not JS.
+
+		should we always do it??
+
+
+
+
+<!doctype html>
+<html>
+	<head>
+		<!--info about the page -->
+		<title>Cristina Morisson</title>
+		<meta charset="utf-8">
+		<!--for characters that don't exist? check this-->
+
+		<link rel="stylesheet" href="css/style.css">
+		<!--we're asking for the CSS file that is inside the css folder. rel is relationship, href is to get the file-->
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+		<!--Google fonts referencing, we are telling to get the font. then we'll apply to elements.
+
+		We putted in h1 (font-family: 'Oswald', sans-serif;)-->
+
+		<!--CTRL+CMD+SPACE for the emogies!!-->
+
+	</head>
+	<body>
+
+		<div class="main">
+
+
+
+
+
+
+
+
+		<!--content of the page -->
+		<h1>Cristina Morisson</h1>
+		<h2>Designer &amp; Super Hero</h2>
+
+
+		<!--src is an atribute and alt is an alternative title to be found on search engines
+		src is file path, it's an index that tells where the find the image :] -->
+		<img src="images/me.jpg" alt="Cristina Morisson" width= "200">
+
+		<h3>About Me</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h3>Top Three Favourite Savoury Fruits</h3>
+		<ol> 
+		<!--ol is ordered list-->
+			<li>Avocado</li>
+			<li>Tomato</li>
+			<li>Pumpkin</li>
+		</ol>
+
+		<h3>Me on the Web</h3>
+		<ul>
+			<li>
+
+			<!--<a> is for anchor, we use it for links-->
+
+				<a href="http://twitter.com/clmorisson">
+				Twitter
+				</a>
+
+				<li>
+				<a href="http://cmorisson.com">
+				Portfolio
+				</a>
+
+			</li>
+
+		</ul>
+
+
+	</li>
+	</ul>
+
+
+	
+	</div>
+
+
+
+<!-- JQUERY: -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- including the file we're going to make: -->
+<script src="js/main.js"></script>
+
+
+
+
+
+	</body>
+
+</html>

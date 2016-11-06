@@ -1,0 +1,139 @@
+body {
+	
+	background-image: url(../images/bg.jpg);
+	/* we had "background-color: rgb(78, 178, 155);" but now we want to put an image
+	the dots say go out of the folder */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	/*safe choices if previous is not available. will depende on browser, etc. too many fonts slows down the page.
+	if we want to use a costume font, we pay per use. should take in consideration the time that will take to load.
+	Google fonts is free.
+	*/
+}
+
+
+.main {
+	background-color: rgba(255, 255, 255, 0.4);
+	max-width: 600px;
+	/*is going to constraint everything inside a box. we say max to squeeze*/
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 50px white;
+	/*Xhorizontal pos Yvertical pos blur size*/
+
+
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	text-shadow: 0px 0px 10px red;
+	/*with great power comes great responsability*/
+
+	/*transform: translateX(10px); rotate ...
+	we can use this for images and text.
+	we can animate as well with transition
+
+
+
+	 */
+}
+
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: normal;
+	text-shadow: 0px 0px 10px yellow;
+}
+
+
+h3 {
+
+	margin-bottom: 0;
+
+}
+
+h3:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+h3 + * {
+	display: none;
+
+}
+
+
+
+img {
+	border: 10px solid black;
+	/*width style color*/
+
+	border-radius: 5%;
+	/*can be 50% 0 . different values map different corners: 50% 50% 0 0; */
+	margin: 0 auto;
+	display: block;
+	background-color: white;
+
+	/*check "CSS BOX properties" for shortcuts - slide 105
+	margin as 0 is because it adapts to every screen. you never know how big the web browser is going to be.
+	*/
+
+
+	transition: transform 0.5s;
+
+	}img:hover {
+
+		transform: rotate(180deg) scale(5);
+		;
+
+}
+
+
+p,
+ol,
+ul {
+	line-height: 1.6;
+	list-style: upper-greek;
+	padding-left: 0;
+
+	/*line height is in character heights.
+
+	list style also none or lower roman*/
+}
+
+
+/*a is for anchors, which fetch the external links
+text decoration includes line through, underlined...*/
+
+a {
+	text-decoration: none;
+	font-weight: bold
+	color: rgb(192, 192, 38);
+}
+
+a:hover {
+	text-decoration: underline;
+	color: rgb(96, 16,19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
